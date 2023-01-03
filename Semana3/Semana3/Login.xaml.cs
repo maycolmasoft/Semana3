@@ -21,13 +21,13 @@ namespace Semana3
         {
 
 
-            string usuario = "12345";
-            string clave = "12345";
+            string usuario = "estudiante2022";
+            string clave = "uisrael2022";
 
             if (txtUsuario.Text == usuario && txtClave.Text == clave)
             {
 
-                Navigation.PushAsync(new Principal(usuario));
+                Navigation.PushAsync(new Notas(usuario));
 
             }
             else {

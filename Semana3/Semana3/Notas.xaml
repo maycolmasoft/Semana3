@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3.Notas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Cálculo de Notas" HorizontalTextAlignment="Center" TextColor="#2196F3" FontSize="28"/>
+
+            <Image Source="logoUISRAEL.png" WidthRequest="200"></Image>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="18"/>
+            
+            <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+                <Label Text="Parcial 1" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+
+            <Entry x:Name="n_seguimiento_1" Placeholder="N Seguimiento" Keyboard="Numeric" TextChanged="n_seguimiento_1_TextChanged"/>
+            <Entry x:Name="n_examen_1" Placeholder="N Examen" Keyboard="Numeric" TextChanged="n_examen_1_TextChanged"/>
+            <Entry x:Name="n_parcial_1" Placeholder="N Parcial 1" IsReadOnly="TRUE" Keyboard="Numeric"/>
+
+            <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+                <Label Text="Parcial 2" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+            <Entry x:Name="n_seguimiento_2" Placeholder="N Seguimiento" Keyboard="Numeric" TextChanged="n_seguimiento_2_TextChanged"/>
+            <Entry x:Name="n_examen_2" Placeholder="N Examen" Keyboard="Numeric" TextChanged="n_examen_2_TextChanged"/>
+            <Entry x:Name="n_parcial_2" Placeholder="N Parcial 2" IsReadOnly="TRUE" Keyboard="Numeric"/>
+
+
+            <Entry x:Name="n_final" Placeholder="N Final" IsReadOnly="TRUE" Keyboard="Numeric"/>
+
+            <Button x:Name="BtnCalcular" BackgroundColor="#2196F3" Text="Calcular" Clicked="BtnCalcular_Clicked"></Button>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
